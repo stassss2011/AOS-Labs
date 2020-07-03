@@ -1,0 +1,7 @@
+mq135.c:14:7:getCorrectionFactor	32	static
+mq135.c:19:7:getResistance	8	static
+mq135.c:24:7:getCorrectedResistance	24	static
+mq135.c:29:7:getPPM	8	static
+mq135.c:34:7:getCorrectedPPM	8	static
+mq135.c:39:7:getRZero	8	static
+mq135.c:44:7:getCorrectedRZero	8	static

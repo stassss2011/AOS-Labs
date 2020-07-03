@@ -1,0 +1,21 @@
+     1                                  section .data
+     2                                  n:
+     3 00000000 0D                          db 13
+     4                                  
+     5                                  
+     6                                  section .text
+     7                                  global CMAIN
+     8                                  CMAIN:
+     9 00000000 89E5                        mov ebp, esp; for correct debugging
+    10                                      
+    11 00000002 31C0                        xor eax, eax;
+    12 00000004 31D2                        xor edx, edx;
+    13 00000006 31C9                        xor ecx, ecx;
+    14                                      
+    15 00000008 668B0D[00000000]            mov cx, [n]
+    16 0000000F 6689C3                      mov bx, ax
+    17 00000012 66B8004C                    mov ax, 4c00h
+    18 00000016 66F7F1                      div cx
+    19                                  
+    20 00000019 31C0                        xor eax, eax
+    21 0000001B C3                          ret
